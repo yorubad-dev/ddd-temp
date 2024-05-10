@@ -2,6 +2,10 @@
 
 ### ❕❕ This is a basic DDD project structure... you should modify it to you need
 
+### PROJECT STRUCTURE
+
+![project tree structure](project_current_structure.png)
+
 ## Project Naming
 
 - change the file name from the sample project name to valid name
