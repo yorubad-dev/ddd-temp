@@ -1,10 +1,10 @@
 package entity
 
 // business models, entity and value object are defined in this directory
-// example :--> 
+// example :-->
 //* type User struct{
-	//* Name string
-	//* Age uint
+//* Name string
+//* Age uint
 //*}
 
-type Entity struct{}
+type Project struct{}
