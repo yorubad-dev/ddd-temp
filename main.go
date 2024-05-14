@@ -4,6 +4,7 @@ import (
 	"log/slog"
 	"os"
 
+	"github.com/KingDaemonX/ddd-template/domain/repository/entry"
 	"github.com/KingDaemonX/ddd-template/domain/repository/infrastructures/auth"
 	"github.com/KingDaemonX/ddd-template/domain/repository/infrastructures/persistent"
 	"github.com/KingDaemonX/ddd-template/domain/repository/interfaces"
@@ -52,7 +53,7 @@ func initiateServerUp() error {
 
 	project := interfaces.NewProject(slg, service.Project, token, redis)
 
-	server := interfaces.NewServer(slg, middlewares.NewMiddleware(slg), &project)
+	server := entry.NewServer(slg, middlewares.NewMiddleware(slg), &project)
 
 	server.Routes()
 
